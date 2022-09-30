@@ -16,7 +16,7 @@ public class PrologueServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("prologue", PageConstructor.getPage(1));
         getServletContext().getRequestDispatcher("/prologue.jsp").forward(request, response);
     }

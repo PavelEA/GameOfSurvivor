@@ -12,7 +12,7 @@ public class StartServlet extends HttpServlet {
         super.init(config);
     }
 @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.getServletContext().getRequestDispatcher("/startPage.jsp").forward(request, response);
     }
 }

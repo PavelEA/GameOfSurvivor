@@ -22,7 +22,7 @@ public class StatisticServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Collection<User> users = this.userRepository.getUsers();
         List<User> userList = users.stream().sorted().toList();
 
