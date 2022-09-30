@@ -1,6 +1,7 @@
 package dev.PavelEA.GoS.servlet.utility;
 
 import lombok.Data;
+import lombok.Getter;
 
 import java.io.Serializable;
 
