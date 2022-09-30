@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>PavelEA.javarush.servlet</groupId>
-  <artifactId>Tomcat01</artifactId>
+  <artifactId>GameOfSurvivor</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
