@@ -1,6 +1,6 @@
 package dev.PavelEA.GoS.servlet;
 
-import dev.PavelEA.GoS.servlet.utility.User;
+import dev.PavelEA.GoS.servlet.utility.model.User;
 import dev.PavelEA.GoS.servlet.utility.UserRepository;
 
 import javax.servlet.*;

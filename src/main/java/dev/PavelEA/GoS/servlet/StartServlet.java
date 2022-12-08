@@ -10,6 +10,8 @@ public class StartServlet extends HttpServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
+
+
     }
 @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

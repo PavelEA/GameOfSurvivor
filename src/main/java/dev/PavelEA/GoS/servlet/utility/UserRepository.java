@@ -1,12 +1,14 @@
 package dev.PavelEA.GoS.servlet.utility;
 
+import dev.PavelEA.GoS.servlet.utility.model.User;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 
 public class UserRepository {
-    private final Map<String, User> users = new HashMap<>();
+    private Map<String, User> users = new HashMap<>();
 
     public void save(User user) {
         users.put(user.getUsername(), user);

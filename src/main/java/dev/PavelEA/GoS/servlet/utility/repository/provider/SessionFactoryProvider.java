@@ -1,4 +1,4 @@
-package dev.PavelEA.GoS.servlet.utility.repository;
+package dev.PavelEA.GoS.servlet.utility.repository.provider;
 
 import org.hibernate.SessionFactory;
 

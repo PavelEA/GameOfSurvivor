@@ -1,27 +1,26 @@
-package dev.PavelEA.GoS.servlet.utility;
+package dev.PavelEA.GoS.servlet.utility.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.Data;
-import lombok.Getter;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.io.Serializable;
 
-@Data
+
+@Builder @NoArgsConstructor @AllArgsConstructor
+@Setter @ToString @Getter
 @Entity
 @Table(name = "users")
 public class User implements Serializable, Comparable<User> {
     @Id
+    @GeneratedValue
     private Long id;
-    @Column(name = "username")
+    @Column(name = "username", unique = true)
     private String username;
     @Column(name = "victory")
     private int victory;
     @Column(name = "defeat")
     private int defeat;
-    @Column(name = "attempts")
+    @Column(name = "attempts", nullable = false)
     private int attempts;
 
     @Override

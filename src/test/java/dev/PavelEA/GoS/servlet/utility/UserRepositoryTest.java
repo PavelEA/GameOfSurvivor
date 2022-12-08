@@ -1,5 +1,6 @@
 package dev.PavelEA.GoS.servlet.utility;
 
+import dev.PavelEA.GoS.servlet.utility.model.User;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collection;
