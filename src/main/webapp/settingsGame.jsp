@@ -19,7 +19,6 @@
                         <button class="btn btn-dange" type="submit" name="removeBtn" value="remove">Удалить</button>
                 </div>
                 <small>${tooltip}</small></p>
-                <small>${user}</small></p>
             </form>
         </div>
     </div>

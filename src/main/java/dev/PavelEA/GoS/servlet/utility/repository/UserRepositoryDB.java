@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
+import java.util.List;
 import java.util.Optional;
 
 
@@ -34,25 +35,56 @@ public class UserRepositoryDB {
             return user;
         }
     }
-    public Optional<User> findById(Long id) {
+    public User findById(Long id) {
         try(Session session = new PropertiesSessionFactoryProvider().getSessionFactory().openSession()){
             User user = session.find(User.class, id);
-            return Optional.of(user);
+            return user;
         }
     }
-    public Optional<String> findByUsername(String username) {
-        String HQL = "select username from User where username = :username";
+
+    public Long findByUsername(String username) {
+        String HQL = "select id from User where username = :username";
         try (Session session = new PropertiesSessionFactoryProvider().getSessionFactory().openSession()) {
-            Query<String> query = session.createQuery(HQL, String.class);
+            Query<Long> query = session.createQuery(HQL, Long.class);
             query.setParameter("username", username);
-            return Optional.ofNullable(query.uniqueResult());
+            return query.getSingleResult();
         }
+
     }
 
     public void deleteByUsername(String username) {
         try (Session session = new PropertiesSessionFactoryProvider().getSessionFactory().openSession()) {
-            session.remove(findByUsername(username));
-            session.flush();
+            Transaction transaction = session.beginTransaction();
+            User user = findById(findByUsername(username));
+                session.remove(user);
+                transaction.commit();
+
+
+        }
+    }
+    public Boolean usernameIsExist(String username) {
+        String HQL = "select exists(select 1 from User where username = :username) from User";
+        try (Session session = new PropertiesSessionFactoryProvider().getSessionFactory().openSession()) {
+            Query<Boolean> query = session.createQuery(HQL, Boolean.class);
+            query.setParameter("username", username);
+            return query.getSingleResult();
+        }
+
+    }
+
+    public List<Long> getAllUsersId(){
+        try (Session session = new PropertiesSessionFactoryProvider().getSessionFactory().openSession()) {
+            String HQL = "select id from User";
+            Query<Long> query = session.createQuery(HQL, Long.class);
+            List<Long> userList = query.list();
+            return userList;
+        }
+    }        public List<String> getAllUsersUsername(){
+        try (Session session = new PropertiesSessionFactoryProvider().getSessionFactory().openSession()) {
+            String HQL = "select username from User";
+            Query<String> query = session.createQuery(HQL, String.class);
+            List<String> userList = query.list();
+            return userList;
         }
     }
     public void delete(User user) {

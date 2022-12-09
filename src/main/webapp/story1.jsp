@@ -1,7 +1,7 @@
 <%@ page import="dev.PavelEA.GoS.servlet.utility.PageConstructor" %>
 <%@ page import="dev.PavelEA.GoS.servlet.utility.AnswerConstructor" %>
 <%@ page import="dev.PavelEA.GoS.servlet.utility.UserRepository" %>
-<%@ page import="dev.PavelEA.GoS.servlet.utility.User" %>
+<%@ page import="dev.PavelEA.GoS.servlet.utility.model.User" %>
 <%@ page import="java.util.Collection" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
