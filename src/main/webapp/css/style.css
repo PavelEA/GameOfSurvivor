@@ -1,0 +1,252 @@
+.image-bg{
+    background: url(../images/mainImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-village{
+    background: url(../images/village.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-w2{
+    background: url(../images/WIN2.jpg) rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-w34{
+    background: url(../images/WIN34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-loseWolf{
+    background: url(../images/LOSE2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-lose1{
+    background: url(../images/LOSE1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-loseBear{
+    background: url(../images/LOSE4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-field{
+    background: url(../images/field.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-sh-house{
+    background: url(../images/shelteredHouses.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-sawmill{
+    background: url(../images/sawmill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-forest{
+    background: url(../images/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-edge{
+    background: url(../images/edge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-sh-house-in{
+    background: url(../images/shelteredHousesInside.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.section-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.end-bandit {
+    background: url(../images/LOSE3.jpg) rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.image-bg-2{
+    background: url(../images/slaid.jpg) rgba(0, 0, 0, 0.6);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    text-align:center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.button-black {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    font-size: 90%;
+    font-weight: 700;
+    color: rgb(209, 209, 217);
+    text-decoration: none;
+    text-shadow: 0 -1px 2px rgba(0, 0, 0, .2);
+    padding: .5em 1em;
+    outline: none;
+    border-radius: 3px;
+    background: linear-gradient(rgb(110, 112, 120), rgb(81, 81, 86)) rgb(110, 112, 120);
+    box-shadow: 0 1px rgba(255, 255, 255, .2) inset,
+    0 3px 5px rgba(0, 1, 6, .5),
+    0 0 1px 1px rgba(0, 1, 6, .2);
+    transition: .2s ease-in-out;
+}
+
+.button-black:hover:not(:active) {
+    background: linear-gradient(rgb(126, 126, 134), rgb(70, 71, 76)) rgb(126, 126, 134);
+}
+
+.button-black:active {
+    top: 1px;
+    background: linear-gradient(rgb(76, 77, 82), rgb(56, 57, 62)) rgb(76, 77, 82);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset,
+    0 2px 3px rgba(0, 0, 0, .5) inset,
+    0 1px 1px rgba(255, 255, 255, .1);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+}
+.title{
+    margin-bottom: 40vh;
+    color: rgba(2, 31, 2, 0.89);
+}
+.button1 {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    font-size: 90%;
+    font-weight: 700;
+    color: rgb(209, 209, 217);
+    text-decoration: none;
+    text-shadow: 0 -1px 2px rgba(0, 0, 0, .2);
+    padding: .5em 1em;
+    outline: none;
+    border-radius: 3px;
+    background: linear-gradient(rgb(110, 112, 120), rgb(81, 81, 86)) rgb(110, 112, 120);
+    box-shadow: 0 1px rgba(255, 255, 255, .2) inset,
+    0 3px 5px rgba(0, 1, 6, .5),
+    0 0 1px 1px rgba(0, 1, 6, .2);
+    transition: .2s ease-in-out;
+}
+
+.button1:hover:not(:active) {
+    background: linear-gradient(rgb(126, 126, 134), rgb(70, 71, 76)) rgb(126, 126, 134);
+}
+
+.button1:active {
+    top: 1px;
+    background: linear-gradient(rgb(76, 77, 82), rgb(56, 57, 62)) rgb(76, 77, 82);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset,
+    0 2px 3px rgba(0, 0, 0, .5) inset,
+    0 1px 1px rgba(255, 255, 255, .1);
+}
+
